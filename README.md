@@ -2,6 +2,8 @@
 
 A small UI that helps catch domain typos in customer email addresses. Enter only the domain portion (the part after `user@`) and the app scores similarity against common providers using the Jaro–Winkler algorithm.
 
+<img width="655" height="408" alt="image" src="https://github.com/user-attachments/assets/0fa140d4-77b9-48e1-9893-2da347203fec" />
+
 ## Features
 
 - Domain-only input with instant scoring
