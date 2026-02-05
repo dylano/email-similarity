@@ -1,0 +1,120 @@
+#root {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.domain-form {
+  display: flex;
+  justify-content: center;
+}
+
+.domain-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.35rem;
+}
+
+.prefix {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  color: #444;
+}
+
+.domain-label input {
+  width: min(360px, 70vw);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  font-size: 1.2rem;
+}
+
+.domain-label input:focus {
+  outline: 2px solid #6366f1;
+  border-color: transparent;
+}
+
+.provider-table {
+  width: min(520px, 90vw);
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.provider-table th,
+.provider-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.provider-table th {
+  font-weight: 600;
+  color: #111827;
+  background: #f8fafc;
+}
+
+.provider-table .highlight {
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+.provider-table .highlight .provider-domain {
+  color: #c2410c;
+}
+
+.provider-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.provider-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 4px;
+}
+
+.provider-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.provider-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.provider-domain {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.disclaimer {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-align: right;
+  width: min(520px, 90vw);
+}
