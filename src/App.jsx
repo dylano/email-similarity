@@ -15,7 +15,10 @@ const providers = [
 ];
 
 function App() {
-  const [domain, setDomain] = useState('');
+  const [domain, setDomain] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('domain') ?? '';
+  });
   const normalizedDomain = domain.trim().toLowerCase();
 
   const getScore = (cmp, provider) =>
